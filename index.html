@@ -2,42 +2,137 @@
 <html lang="en">. <!--- ESTE ES UN COMENTARIO -->
 
 <head>
-    <title>Document</title>
+    <title>portafolio profesional - Javier Noh</title>
+    <link rel="stylesheet" href="css/main.css" /><!-- Enlaza el css-->
+
 </head>
 
-<body>
-    <!-- TODO LO QUE COLOQUEN LO VERA EL USUARIO-->
-    <header>
-        <h1>Portafolio Profesional</h1>
-        <h4>Carlos Javier Noh Uc</h4>
-    </header>
-    <!--MENU DE NAVEGACION -->
+<header>
+    <h1>Portafolio Profesional</h1>
+    <h4>Carlos Javier Noh Uc </h4>
+
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Mi Experiencia</a>
-        <a href="#">Contactame</a>
-        <nav>
-            <!-- contenido principal -->
-            <main>
-                <section>
-                    <h2>Bienvenidos a mi portafolio profesional</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                        <img alt="foto de perfil" src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg" width="500"/>
-                
-                <section>
-        <main>
-        <footer>
-            <p>&copy; 2025 Todos los derechos reservados</p>
-        </footer>
+        <ul>
+            <li><a href="#bienvenida">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos Tecnologicos</a></li>
+            <li><a href="#competencias">Competencias profesionales</a></li>
+            <li><a href="#contacto">Contactame</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="bienvenida">
+        <div class="contenido-bienvenida">
+
+            <div class="perfil-imagen">
+                <img alt="foto de perfil" src="imagenes/foto-perfil.jpg" />
+            </div>
+
+            <div class="perfil-texto">
+                <h2>Bienvenidos a mi portafolio profesional</h2>
+                <p>Mi nombre es <mark> Carlos Javier Noh Uc</mark> soy estudiante de ingenieria en <strong>
+                        Tecnologias de la
+                        informacion.</strong>
+                    
+                    porque me apasiona la tecnología y el desarrollo de software. He creado proyectos como
+                    CalificaPro, una aplicación para facilitar la gestión de calificaciones.
+                    Además, soy fundador de CJ7 Visuals Photography, mi estudio fotográfico donde combino
+                    creatividad y técnica para capturar momentos únicos.
+                    Fuera del trabajo formal, también tengo una microempresa de inversión a largo plazo, donde
+                    colaboro con personas que, al igual que yo, están obteniendo excelentes resultados. Mi objetivo
+                    siempre es crecer y crear proyectos que aporten valor.”
+
+                <p>Mi <small>Frase favorita es:</small> <i>el 7 siempre sera mejor que el 10</i></p>
+
+            </div>
+        </div>
+    </section>
+</main>
 
 
-</body>
+</section>
+<section id="proyectos">
+    <h2>Proyectos Tecnologicos</h2>
+    <div class="lista-proyectos">
+        <article class="proyecto">
+            <h3>CalificPro</h3>
+            <p>Sistema de calificacion para docentes</p>
+        </article>
+        <article class="proyecto">
+            <h3>JN-INVERSIONS</h3>
+            <p>Inversiones a largo plazo y Parlays</p>
+        </article>
+        <article class="proyecto">
+            <h3>CJ7 Visuals Photo</h3>
+            <p>Estudio fotografico Visual de JN</p>
+        </article>
+    </div>
+
+</section>
+<section id="competencias">
+    <h2>Competencias profesionales</h2>
+    <h3>Tecnologias y Lenguajes</h3>
+    <ul>
+        <li>HTML5</li>
+        <Li>CSS</LI>
+        <li>JavaScript</li>
+        <li>C#</li>
+    </ul>
+
+    <h3>Dominio des Habilidades</h3>
+    <div class="barra-progreso">
+        <div>
+            <span>HTML</span>
+            <progress main="0" max="100" value="90"></progress>
+        </div>
+        <div>
+            <span>JavaScript</span>
+            <progress main="0" max="100" value="75"></progress>
+        </div>
+        <div>
+            <span>CSS</span>
+            <progress main="0" max="100" value="55"></progress>
+        </div>
+        <div>
+            <span>C#</span>
+            <progress main="0" max="100" value="85"></progress>
+        </div>
+    </div>
+
+
+</section>
+<section id="contacto">
+
+    <h2>Contactame</h2>
+    <p> Ingresa tus datos correctos</p>
+    <form>
+        <div class="campos">
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" value="" placeholder="Ingresa tu nombre" />
+        </div>
+        <div class="campos">
+            <label>Telefono:</label>
+            <input type="number" name="telefono" value="" placeholder="Ingresa tu telefono" />
+        </div>
+        <div class="campos">
+            <label>Correo Electronico:</label>
+            <input type="text" name="Correo" value="" placeholder="Ingresa tu correo" />
+        </div>
+        <div class="campos">
+            <button type="submit">Enviar</button>
+        </div>
+
+
+    </form>
+
+</section>
+<main>
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+
+
+    </body>
 
 </html>

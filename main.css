@@ -1,0 +1,241 @@
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Roboto+Slab:wght@100..900&display=swap');
+
+        * {
+            margin: auto;
+        }
+
+        h1 {
+            font-family: "BBH Sans Hegarty", sans-serif;
+        }
+
+        body {
+            font-family: "Roboto Slab", serif;
+        }
+
+        header {
+            background-color: #0c1412;
+            text-align: center;
+            color: #bfbfbf;
+            border-bottom: solid 5px #a62121;
+            /*ESTE ES UN COMENTARIO*/
+            /*padding: 30px 20px 80 px 10px; TOP RIGHT BOTTOM LEFT */
+            padding: 30px 0;
+
+        }
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            padding: 30px 20px;
+            border-bottom: 5px solid #ffffff;
+            font-size: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e40000;
+            font-size: 25px;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+
+        nav a:hover {
+            background-color: rgb(103, 89, 89);
+            border-radius: 10px;
+        }
+
+        #bienvenida {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contenido-bienvenida {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .perfil-imagen img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #proyectos {
+            background-color: #53464698;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .lista-proyectos {
+            display: flex;
+            padding-top: 20px;
+        }
+
+        .proyecto {
+            width: 30%;
+            border: solid 2px #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .proyecto h3 {
+            color: #ffffff
+        }
+
+        #competencias {
+            padding: 30px 30px;
+
+        }
+
+        #competencias h2 {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        #competencias ul {
+            list-style-type: none;
+            display: flex;
+            clear: both;
+
+        }
+
+        #competencias ul li {
+            background-color: #000000;
+            color: #fffbfb;
+            padding: 15px 30px;
+            border-radius: 25px;
+
+        }
+
+        #contacto {
+            padding: 30px;
+            border-top: 2px dashed #000000;
+            align-items: center;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        #contacto h2 {
+            color: #e40000;
+            font-size: 2em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+
+        }
+
+        .barra-progreso {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 90%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .barra-progreso span {
+            display: block;
+            width: 100%;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        progress {
+          flex-grow: 1;
+          height: 40px;
+        }
+
+        /* Estilo base de la barra */
+        progress::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 12px;
+        }
+
+        /* Colores personalizados por habilidad */
+        progress.html::-webkit-progress-value {
+            background: linear-gradient(90deg, #f16529, #f57c43);
+        }
+
+        progress.js::-webkit-progress-value {
+            background: linear-gradient(90deg, #f7df1e, #f0c000);
+        }
+
+        progress.css::-webkit-progress-value {
+            background: linear-gradient(90deg, #2965f1, #5aa9ff);
+        }
+
+        progress.csharp::-webkit-progress-value {
+            background: linear-gradient(90deg, #68217a, #a349a4);
+        }
+
+        /* Para Firefox */
+        progress.html::-moz-progress-bar {
+            background: linear-gradient(90deg, #f16529, #f57c43);
+        }
+
+        progress.js::-moz-progress-bar {
+            background: linear-gradient(90deg, #f7df1e, #f0c000);
+        }
+
+        progress.css::-moz-progress-bar {
+            background: linear-gradient(90deg, #2965f1, #5aa9ff);
+        }
+
+        progress.csharp::-moz-progress-bar {
+            background: linear-gradient(90deg, #68217a, #a349a4);
+        }
+
+        .campos label {
+            font-size: 20px;
+            color: #35753f;
+            flex: 0 0 150px;
+            text-align: right;
+
+        }
+
+        .campos input {
+            font-size: 15px;
+            padding: 14px;
+            border: solid 2px #000000;
+            border-radius: 15px;
+            width: 25%;
+            max-width: 400px;
+
+
+        }
+
+        .campos button {
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ba3535;
+            color: #ffffff;
+            width: 15%;
+            display: flex;
+            padding-top: 20px;
+
+
+        }
+
+        footer {
+            padding: 30px 30px;
+            background-color: #35753f;
+            color: #ffffff;
+            font-size: 14px;
+            border-top: solid 5px #000000;
+            text-align: center;
+        }
